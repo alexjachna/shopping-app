@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,8 +13,11 @@
 header {
     position: fixed;
     width: 100%;
-    height: 10%;
-    background-color: white;
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -22,21 +26,114 @@ footer {
     background-color: green;
 }
 
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0 3vw;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+#nav-bar ul li a:hover {
+    text-shadow: 0 0 5px #000000;
+}
+        
 #landing-page {
     width: 100%;
     height: 100vh;
-    background-color: red;
-    background-image: url(./images/Chell/fauxm_item-16.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.3) inset;
+    background-color: #FF9494;
+}  
+
+#front-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+#landing-text {
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing-text {
+    color: white;
+}
+
+.landing-title {
+    font-size: 144px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2rem;
+    line-height: 0.8;
+}
+
+.landing-desc {
+    font-size: 36px;
+}
+
+#browse-button {
+    width: 25%;
+    height: 50px;
+    background-color: #e66565;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#landing-image {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    border-radius: 50% 10%;
+}
+
+#landing-image img {
+    border-radius: 50% 10%;
+}
+
+.landing-page-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.landing-page-divider svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 75px;
+}
+
+.landing-page-divider .shape-fill {
+    fill: #FFFFFF;
+}     
 
 #about {
     width: 100%;
     height: 100vh;
-    background-color: blue;
 }
 
 

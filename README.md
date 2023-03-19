@@ -5,4 +5,13 @@ A fully complete shopping app with shopping cart implementation using JavaScript
 
 Day 1: Basic starting files and layout
 
-First submission contains all the starting files (more will be added as we go on). Files include the landing-page, a stylesheet, and a script.js file.
+First submission contains all the starting files (more will be added as we go on). Files include the landing-page, a stylesheet, and a script.js file.'
+
+-----------------------
+
+Day 2: Built landing-page
+
+Second submission contains a landing page with a sleek design that will attempt to showcase a shopping app, as well as a gallery to view artworks and pieces.
+
+![image](https://user-images.githubusercontent.com/57778785/226154781-d019e76d-feab-4607-af64-f000d5a8c286.png)
+

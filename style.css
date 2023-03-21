@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -11,34 +13,41 @@
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 15%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ff9494;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-footer {
-    width: 100%;
-    height: 350px;
-    background-color: green;
+.header-title {
+    font-size: 5rem;
+    padding: 0 3vw;
+    color: white;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
 }
 
 #nav-bar ul {
     display: flex;
+    align-items: center;
 }
 
 #nav-bar ul li a {
     display: block;
     color: white;
-    font-size: 36px;
-    font-weight: 700;
-    padding: 0 3vw;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 3vw 0 0;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
+}
+
+#nav-bar ul li a img {
+    width: 3rem;
 }
 
 #nav-bar ul li a:hover {
@@ -48,24 +57,26 @@ footer {
 #landing-page {
     width: 100%;
     height: 100vh;
-    background-color: #FF9494;
+    background-color: #ff9494;
 }  
 
 #front-page {
-    width: 100%;
+    width: 80%;
     height: 100vh;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 #landing-text {
-    width: 30%;
+    width: 50%;
     height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 10;
 }
 
 .landing-text {
@@ -73,14 +84,14 @@ footer {
 }
 
 .landing-title {
-    font-size: 144px;
+    font-size: 10rem;
     font-family: 'Dancing Script', cursive;
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
     line-height: 0.8;
 }
 
 .landing-desc {
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 #browse-button {
@@ -93,9 +104,25 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#browse-button:hover {
+    background-color: #ff5252;
+    box-shadow: 0 0 15px 3px white;
 }
 
 #landing-image {
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#landing-image-container {
     width: 500px;
     height: 500px;
     display: flex;
@@ -103,37 +130,130 @@ footer {
     align-items: center;
     border: 10px solid white;
     box-shadow: 20px 20px rgba(0,0,0,.15);
-    border-radius: 50% 10%;
 }
 
 #landing-image img {
-    border-radius: 50% 10%;
-}
+    width: 85%;
+}  
 
-.landing-page-divider {
+#blob-1 {
+    width: 600px;
+    height: 600px;
     position: absolute;
-    bottom: 0;
+    top: 10%;
+    left: 10%;
+    opacity: 0.1;
+}
+
+#blob-2 {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
     left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+    opacity: 0.1;
 }
 
-.landing-page-divider svg {
+
+/* 
+ABOUT US SECTION 1
+*/
+
+#about-1 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
-    display: block;
-    width: calc(123% + 1.3px);
-    height: 75px;
 }
 
-.landing-page-divider .shape-fill {
-    fill: #FFFFFF;
-}     
+.about-title {
+    font-size: 60px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
 
-#about {
+#about-1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#about-1-image {
+    width: 40%;
+    z-index: 10;
+}
+
+#about-1-image img {
     width: 100%;
-    height: 100vh;
+    border-radius: 29% 71% 67% 33% / 51% 29% 71% 49%;
 }
 
+#about-description {
+    width: 40%;
+    margin: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    z-index: 10;
+    line-height: 2;
+}
 
+#blob-3 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    z-index: 1;
+}
+
+#about-2 {
+    width: 100%;
+    height: 800px;
+    background-color: #ff9494;
+    position: relative;
+}
+
+#about-3 {
+    width: 100%;
+    height: 800px;
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #ff9494;
+}
+
+@media only screen and (max-width: 1280px) {
+    #landing-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    #landing-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .landing-title {
+        font-size: 7rem;
+    }
+
+    #browse-button {
+        width: 40%;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-title {
+        font-size: 5rem;
+    }
+
+}

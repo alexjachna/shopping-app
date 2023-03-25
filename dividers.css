@@ -23,7 +23,7 @@
 }   
 
 /* top about */
-.custom-shape-divider-top-1679346415 {
+.top-divider {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,19 +32,19 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1679346415 svg {
+.top-divider svg {
     position: relative;
     display: block;
     width: calc(156% + 1.3px);
     height: 92px;
 }
 
-.custom-shape-divider-top-1679346415 .shape-fill {
+.top-divider .shape-fill {
     fill: #FFFFFF;
 }
 
 /* bottom about */
-.custom-shape-divider-bottom-1679346445 {
+.bottom-divider {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,13 +54,13 @@
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1679346445 svg {
+.bottom-divider svg {
     position: relative;
     display: block;
     width: calc(193% + 1.3px);
     height: 123px;
 }
 
-.custom-shape-divider-bottom-1679346445 .shape-fill {
+.bottom-divider .shape-fill {
     fill: #FFFFFF;
 }

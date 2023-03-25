@@ -23,3 +23,13 @@ Third submission contains an updated front page, as well as creating a responsiv
 
 ![image](https://user-images.githubusercontent.com/57778785/226502590-1d6f5694-ff73-4f39-a867-0254936ab870.png)
 ![image](https://user-images.githubusercontent.com/57778785/226502600-dbc27926-c592-404a-9e32-92ecbecf3345.png)
+
+-----------------------
+
+Day 4: Updating fully complete front page (missing links of a few items)
+
+Fourth submission contains a fully complete front page, with a few missing anchor links on the footer. Also missing responsive about-2, about-3 and footer.
+
+![image](https://user-images.githubusercontent.com/57778785/227698316-263ee5da-f1ef-43bb-b640-f07ccad74428.png)
+![image](https://user-images.githubusercontent.com/57778785/227698329-834d14c6-3ad4-4823-9528-9246562f4bf9.png)
+

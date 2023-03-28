@@ -94,7 +94,7 @@ header {
 .landing-title {
     font-size: 10rem;
     font-family: 'Dancing Script', cursive;
-    letter-spacing: 1rem;
+    letter-spacing: 0.8;
     line-height: 0.8;
 }
 
@@ -202,6 +202,7 @@ ABOUT US SECTION 1
 #about-1-image img {
     width: 100%;
     border-radius: 29% 71% 67% 33% / 51% 29% 71% 49%;
+    border: 10px dashed #ff5252c0;
 }
 
 #about-description {
@@ -261,19 +262,24 @@ ABOUT US SECTION 2
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
     margin: 35px 0;
 }
 
+.mask-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #masks-container img {
-    width: 250px;
+    width: 200px;
+    margin: 0 10px;
     box-shadow: 0 0 5px 1px white;
     border-radius: 10px;
     transition: 1s;
 }
 
 #masks-container img:hover {
-    width: 250px;
     box-shadow: 0 0 25px 1px white;
     border-radius: 10px;
 }
@@ -332,6 +338,7 @@ ABOUT US SECTION 3
 .about-3-title {
     color: brown;
     font-size: 72px;
+    line-height: 0.8;
 }
 
 .about-3-desc {
@@ -348,11 +355,9 @@ ABOUT US SECTION 3
 }
 
 #about-3-images img {
-    width: 600px;
-}
-
-#about-3-images img:nth-child(2) {
-    border-radius: 25px;
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
 }
 
 /* 
@@ -437,6 +442,36 @@ footer {
     #blob-3 {
         display: none;
     }
+
+    #about-2 {
+        height: 1100px; 
+    }
+
+    #masks-container {
+        flex-direction: column;
+    }
+
+    .mask-container {
+        margin: 10px 0;
+    }
+
+    .about-2-title, .about-2-description {
+        text-align: center;
+        width: 90%;
+    }
+
+    #about-3 {
+        height: 900px;
+        flex-direction: column;
+    }
+
+    #about-3-description, #about-3-images {
+        width: 70%;
+    }
+
+    .footer-items, #footer-links {
+        gap: 25px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -449,6 +484,10 @@ footer {
         width: 40%;
         height: 50px;
     }
+
+    .remove {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -456,4 +495,20 @@ footer {
         font-size: 5rem;
     }
 
+    #about-3-description, #about-3-images {
+        width: 90%;
+    }
+
+    .footer-items {
+        gap: 10px;
+    }
+
+    #footer-links {
+        gap: 40px;
+        font-size: 24px;
+    }
+
+    .footer-hidden {
+        display: none;
+    }
 }

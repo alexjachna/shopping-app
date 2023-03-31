@@ -33,3 +33,13 @@ Fourth submission contains a fully complete front page, with a few missing ancho
 ![image](https://user-images.githubusercontent.com/57778785/227698316-263ee5da-f1ef-43bb-b640-f07ccad74428.png)
 ![image](https://user-images.githubusercontent.com/57778785/227698329-834d14c6-3ad4-4823-9528-9246562f4bf9.png)
 
+-----------------------
+
+Day 5: Added a products page, along with the shopping cart page (both incomplete)
+
+Fifth submission contains a basic version of the products page, as well as the skeleton of what the shopping cart section will look like. This contains JavaScript to show the shopping-cart div, as well as the ability to click out of the shopping cart section.
+
+![image](https://user-images.githubusercontent.com/57778785/229006053-478a2a54-d72e-4963-9d7e-df650700ad1c.png)
+![image](https://user-images.githubusercontent.com/57778785/229006085-ba1f8332-15ff-4df6-970c-316b777fa250.png)
+
+

@@ -30,8 +30,10 @@
     <section id="products-page">
         <div id="products-container">
             <div class="products-item">
-                <div class="products-image">
-                    <img src="./images/Chell/fauxm_item-4.jpg" alt="">
+                <div class="products-image" style="background: url(./images/Chell/fauxm_item-4.jpg)">
+                    <div class="product-add-cart">
+                        <p>ADD TO CART</p>
+                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
@@ -44,8 +46,10 @@
                 </div>
             </div>
             <div class="products-item">
-                <div class="products-image">
-                    <img src="./images/Chell/fauxm_item-6.jpg" alt="">
+                <div class="products-image" style="background: url(./images/Chell/fauxm_item-6.jpg)">
+                    <div class="product-add-cart">
+                        <p>ADD TO CART</p>
+                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
@@ -58,8 +62,10 @@
                 </div>
             </div>
             <div class="products-item">
-                <div class="products-image">
-                    <img src="./images/Chell/fauxm_item-8.jpg" alt="">
+                <div class="products-image" style="background: url(./images/Chell/fauxm_item-8.jpg)">
+                    <div class="product-add-cart">
+                        <p>ADD TO CART</p>
+                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
@@ -72,8 +78,10 @@
                 </div>
             </div>
             <div class="products-item">
-                <div class="products-image">
-                    <img src="./images/Chell/fauxm_item-10.jpg" alt="">
+                <div class="products-image" style="background: url(./images/Chell/fauxm_item-10.jpg)">
+                    <div class="product-add-cart">
+                        <p>ADD TO CART</p>
+                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
@@ -86,8 +94,10 @@
                 </div>
             </div>
             <div class="products-item">
-                <div class="products-image">
-                    <img src="./images/Chell/fauxm_item-12.jpg" alt="">
+                <div class="products-image" style="background: url(./images/Chell/fauxm_item-12.jpg)">
+                    <div class="product-add-cart">
+                        <p>ADD TO CART</p>
+                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
@@ -100,8 +110,10 @@
                 </div>
             </div>
             <div class="products-item">
-                <div class="products-image">
-                    <img src="./images/Chell/fauxm_item-14.jpg" alt="">
+                <div class="products-image" style="background: url(./images/Chell/fauxm_item-14.jpg)">
+                    <div class="product-add-cart">
+                        <p>ADD TO CART</p>
+                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
@@ -169,7 +181,23 @@
 
         </div>
         <div id="shopping-cart-container">
-            <p>hello</p>
+            <div id="shopping-cart-container-title">
+                <div id="scct-text">
+                    <p class="scct-text-title">My Cart.</p>
+                    <p class="scct-text-items">(0) Items</p>
+                    <hr>
+                </div>
+                <div id="scct-closeout">
+                    <img src="./images/close-out.png" alt="Close out box" width="48px" onclick="hideCart()">
+                </div>
+            </div>
+            <div id="shopping-cart-container-items">
+                <p>No Items to Display.</p>
+            </div>
+            <div id="shopping-cart-container-buttons">
+                <p>Total: $0.00</p>
+                <div id="sccb-checkout"></div>
+            </div>
         </div>
     </section>
 

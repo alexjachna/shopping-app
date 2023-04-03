@@ -454,12 +454,43 @@ header.header-products {
     box-shadow: 0 0 20px 5px rgba(0,0,0,.15);
 }
 
+.products-item:hover .products-image {
+    box-shadow: 0 0 0 5000px rgba(255, 89, 89, 0.7) inset;
+}
+
+.products-item:hover .product-add-cart {
+    
+    display: flex;
+}
+
 .products-image {
     width: 100%;
     height: 350px;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.product-add-cart {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 25px;;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #ff5252;
+    cursor: pointer;
+    opacity: 1;
 }
 
 .products-image img {
+    background-color: green;
     width: 100%;
 }
 
@@ -493,14 +524,14 @@ header.header-products {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 0, 0, 0.274);
+    background-color: rgba(255, 255, 255, 0.274);
     z-index: 10;
 }
 
 #click-out-container {
     width: 70%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(59, 59, 59, 0.3);
     cursor: pointer;
 }
 
@@ -508,6 +539,69 @@ header.header-products {
     width: 30%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shopping-cart-container-title {
+    width: 90%;
+    flex-basis: 20%;
+    display: flex;
+}
+
+#scct-text {
+    flex-basis: 80%;
+    padding: 25px 0;
+}
+
+.scct-text-title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.scct-text-items {
+    font-size: 30px;
+    opacity: 0.7;
+    padding-bottom: 20px;
+}
+
+#scct-closeout {
+    flex-basis: 20%;
+}
+
+#scct-closeout img {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#scct-closeout img:hover {
+    
+    opacity: 0.8;
+}
+
+#shopping-cart-container-items {
+    width: 90%;
+    flex-basis: 50%;
+    font-style: italic;
+    font-weight: 700;
+    opacity: 0.3;
+}
+
+#shopping-cart-container-buttons {
+    width: 90%;
+    flex-basis: 20%;
+}
+
+#shopping-cart-container-buttons p {
+    font-size: 40px;
+}
+
+#sccb-checkout {
+    width: 200px;
+    height: 50px;
+    background-color: red;
 }
 
 @media only screen and (max-width: 1280px) {

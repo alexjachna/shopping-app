@@ -42,4 +42,13 @@ Fifth submission contains a basic version of the products page, as well as the s
 ![image](https://user-images.githubusercontent.com/57778785/229006053-478a2a54-d72e-4963-9d7e-df650700ad1c.png)
 ![image](https://user-images.githubusercontent.com/57778785/229006085-ba1f8332-15ff-4df6-970c-316b777fa250.png)
 
+-----------------------
+
+Day 6: Added 'add to cart' on each product; Updated shopping-cart
+
+Sixth submission contains an add-to-cart option on hover, as well as an updated shopping cart with full layout. JavaScript will begin soon after final touches in HTML/CSS.
+
+![image](https://user-images.githubusercontent.com/57778785/229419215-b19e03d1-0791-4d52-b877-3247c0c50e29.png)
+![image](https://user-images.githubusercontent.com/57778785/229419239-0b0b61fe-c2ba-4fb5-a496-f30321c0de6f.png)
+
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chell Creates. - Crafting Goods</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-products.css">
     <link rel="stylesheet" href="dividers.css">
 </head>
 <body>
@@ -30,14 +31,15 @@
     <section id="products-page">
         <div id="products-container">
             <div class="products-item">
+                <img class="product-image" src="./images/Chell/fauxm_item-4.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-4.jpg)">
-                    <div class="product-add-cart">
+                    <div class="product-add-cart" onclick="addToCart(this)">
                         <p>ADD TO CART</p>
                     </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask</p>
+                        <p class="product-title">Keaton Mask 1</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
@@ -46,14 +48,15 @@
                 </div>
             </div>
             <div class="products-item">
+                <img class="product-image" src="./images/Chell/fauxm_item-6.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-6.jpg)">
-                    <div class="product-add-cart">
+                    <div class="product-add-cart" onclick="addToCart(this)">
                         <p>ADD TO CART</p>
                     </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask</p>
+                        <p class="product-title">Keaton Mask 2</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
@@ -62,14 +65,15 @@
                 </div>
             </div>
             <div class="products-item">
+                <img class="product-image" src="./images/Chell/fauxm_item-8.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-8.jpg)">
-                    <div class="product-add-cart">
+                    <div class="product-add-cart" onclick="addToCart(this)">
                         <p>ADD TO CART</p>
                     </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask</p>
+                        <p class="product-title">Keaton Mask 3</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
@@ -78,14 +82,15 @@
                 </div>
             </div>
             <div class="products-item">
+                <img class="product-image" src="./images/Chell/fauxm_item-10.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-10.jpg)">
-                    <div class="product-add-cart">
+                    <div class="product-add-cart" onclick="addToCart(this)">
                         <p>ADD TO CART</p>
                     </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask</p>
+                        <p class="product-title">Keaton Mask 4</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
@@ -94,14 +99,15 @@
                 </div>
             </div>
             <div class="products-item">
+                <img class="product-image" src="./images/Chell/fauxm_item-12.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-12.jpg)">
-                    <div class="product-add-cart">
+                    <div class="product-add-cart" onclick="addToCart(this)">
                         <p>ADD TO CART</p>
                     </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask</p>
+                        <p class="product-title">Keaton Mask 5</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
@@ -110,14 +116,15 @@
                 </div>
             </div>
             <div class="products-item">
+                <img class="product-image" src="./images/Chell/fauxm_item-14.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-14.jpg)">
-                    <div class="product-add-cart">
+                    <div class="product-add-cart" onclick="addToCart(this)">
                         <p>ADD TO CART</p>
                     </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask</p>
+                        <p class="product-title">Keaton Mask 6</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
@@ -177,9 +184,7 @@
     </footer>
     
     <section id="shopping-cart">
-        <div id="click-out-container" onclick="hideCart()">
-
-        </div>
+        <div id="click-out-container" onclick="hideCart()"></div>
         <div id="shopping-cart-container">
             <div id="shopping-cart-container-title">
                 <div id="scct-text">
@@ -192,11 +197,13 @@
                 </div>
             </div>
             <div id="shopping-cart-container-items">
-                <p>No Items to Display.</p>
+                <p class="no-items-disclaimer">No Items to Display.</p>
             </div>
             <div id="shopping-cart-container-buttons">
-                <p>Total: $0.00</p>
-                <div id="sccb-checkout"></div>
+                <p class="sccb-total">Total: $0.00</p>
+                <div id="sccb-checkout">
+                    <p>Checkout</p>
+                </div>
             </div>
         </div>
     </section>

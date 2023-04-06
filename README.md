@@ -51,4 +51,11 @@ Sixth submission contains an add-to-cart option on hover, as well as an updated 
 ![image](https://user-images.githubusercontent.com/57778785/229419215-b19e03d1-0791-4d52-b877-3247c0c50e29.png)
 ![image](https://user-images.githubusercontent.com/57778785/229419239-0b0b61fe-c2ba-4fb5-a496-f30321c0de6f.png)
 
+-----------------------
+
+Day 7: Added functionality to shopping-cart
+
+Seventh submission contains basic functionality to shopping-cart, such as being able to add items, as well as remove items. Next goal is to customize each item shown in shopping-cart, as well as change the total price when adding items.
+
+![image](https://user-images.githubusercontent.com/57778785/230285739-7a3695f5-d903-44ba-8932-0fb55515e6f8.png)
 

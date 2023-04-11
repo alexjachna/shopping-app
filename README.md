@@ -59,3 +59,14 @@ Seventh submission contains basic functionality to shopping-cart, such as being 
 
 ![image](https://user-images.githubusercontent.com/57778785/230285739-7a3695f5-d903-44ba-8932-0fb55515e6f8.png)
 
+-----------------------
+
+Day 8: Added full functionality of website
+
+Eigth submission contains full functionality of website. Website contains basic functionality of an e-commerce shopping cart, as well as clean design to showcase a small business selling crafts. This won't be the final FINAL submission, but rather acting as the first demo of the final product.
+
+Final thoughts and issues:
+- Figure out how to make the shopping cart work on both the home page and products page (only updates the products page; find a way to save the data from that particular div, and copy it onto the home page)
+- Make a 'subscribe to newsletter' notification when a user inputs an email and clicks subscribe (Currently just using alert() as filler)
+- Maybe make a contact page just to show that nothing for a small business page is missing (most small business will obviously want to share their contact info with their customers)
+- In the end, this project was entire meant to showcase the use of a shopping cart, being able to add and delete items from your cart. It still had a goal to showcase  clean design, and clean code throughout, by make the website responsive.

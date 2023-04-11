@@ -65,6 +65,8 @@ Day 8: Added full functionality of website
 
 Eigth submission contains full functionality of website. Website contains basic functionality of an e-commerce shopping cart, as well as clean design to showcase a small business selling crafts. This won't be the final FINAL submission, but rather acting as the first demo of the final product.
 
+![image](https://user-images.githubusercontent.com/57778785/231041846-ebe80971-0659-4b74-b531-ac693f30a1ea.png)
+
 Final thoughts and issues:
 - Figure out how to make the shopping cart work on both the home page and products page (only updates the products page; find a way to save the data from that particular div, and copy it onto the home page)
 - Make a 'subscribe to newsletter' notification when a user inputs an email and clicks subscribe (Currently just using alert() as filler)

@@ -59,6 +59,17 @@ header {
     width: 3rem;
 }
 
+.shopping-cart-quantity {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #ff5252;
+    width: 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
 #nav-bar ul li a:hover {
     text-shadow: 0 0 10px #ffffff;
 }
@@ -85,6 +96,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 10;
 }
 
 .landing-text {
@@ -102,6 +114,10 @@ header {
     font-size: 2.5rem;
 }
 
+a #browse-button {
+    width: 150px;
+}
+
 #browse-button {
     width: 25%;
     height: 50px;
@@ -114,7 +130,6 @@ header {
     align-items: center;
     border-radius: 25px;
     cursor: pointer;
-    z-index: 1;
     transition: 0.5s;
 }
 
@@ -152,6 +167,7 @@ header {
     top: 10%;
     left: 10%;
     opacity: 0.1;
+    z-index: 1;
 }
 
 #blob-2 {
@@ -161,6 +177,7 @@ header {
     top: 0;
     left: 0;
     opacity: 0.1;
+    z-index: 1;
 }
 
 
@@ -203,6 +220,7 @@ ABOUT US SECTION 1
     width: 100%;
     border-radius: 29% 71% 67% 33% / 51% 29% 71% 49%;
     border: 10px dashed #ff5252c0;
+    
 }
 
 #about-description {
@@ -276,7 +294,39 @@ ABOUT US SECTION 2
     margin: 0 10px;
     box-shadow: 0 0 5px 1px white;
     border-radius: 10px;
-    transition: 1s;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateY(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+#masks-container-1 img:nth-child(1) {
+    transition-delay: 100ms;
+}
+
+#masks-container-1 img:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+#masks-container-2 img:nth-child(1) {
+    transition-delay: 300ms;
+}
+
+#masks-container-2 img:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+#masks-container-2 img:nth-child(3) {
+    transition-delay: 500ms;
 }
 
 #masks-container img:hover {
@@ -333,6 +383,7 @@ ABOUT US SECTION 3
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .about-3-title {
@@ -384,6 +435,10 @@ footer {
     font-weight: 700;
 }
 
+.footer-items a:hover {
+    text-shadow: 0 0 10px #ffffff;
+}
+
 #footer-links {
     gap: 75px;
 }
@@ -406,10 +461,15 @@ footer {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .footer-social img {
     width: 50%;
+}
+
+#footer-socials a .footer-social:hover {
+    box-shadow: 0 0 10px 3px #ffffff;
 }
 
 .bigger img {
@@ -496,7 +556,15 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .landing-title {
-        font-size: 5rem;
+        font-size: 8rem;
+    }
+
+    .about-title {
+        line-height: 0.7;
+    }
+
+    #masks-container img {
+        width: 150px;
     }
 
     #about-3-description, #about-3-images {

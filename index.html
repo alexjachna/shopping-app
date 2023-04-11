@@ -13,7 +13,7 @@
     
     <section id="landing-page">
         <header>
-            <p class="header-title">CC.</p>
+            <a href="index.html"><p class="header-title">CC.</p></a>
             <nav id="nav-bar">
                 <ul>
                     <li>
@@ -23,6 +23,7 @@
                         <a href="products.html">Products</a>
                     </li>
                     <li>
+                        <p class="shopping-cart-quantity">0</p>
                         <a href="#shopping-cart"><img src="./images/shopping-cart.png" onclick="showCart()"></a>
                     </li>
                 </ul>
@@ -33,7 +34,9 @@
             <div id="landing-text">
                 <p class="landing-title landing-text">chell<br> creates.</p>
                 <p class="landing-desc landing-text">For all your crafting goods.</p>
-                <div id="browse-button">Browse</div>
+                <a href="products.html">
+                    <div id="browse-button">Browse</div>
+                </a>
             </div>
             <div id="landing-image">
                 <div id="landing-image-container">
@@ -93,16 +96,18 @@
         <p class="about-2-description">We like to make various masks and gadgets for the various arts and crafts enjoyers.</p>
         <div id="masks-container">
             <div id="masks-container-1" class="mask-container">
-                <img src="./images/Chell/fauxm_item-4.jpg" alt="">
-                <img src="./images/Chell/fauxm_item-6.jpg" alt="">
+                <img class="hidden" src="./images/Chell/fauxm_item-4.jpg" alt="">
+                <img class="hidden" src="./images/Chell/fauxm_item-6.jpg" alt="">
             </div>
             <div id="masks-container-2" class="mask-container">
-                <img src="./images/Chell/fauxm_item-8.jpg" alt="">
-                <img src="./images/Chell/fauxm_item-10.jpg" alt="" class="remove">
-                <img src="./images/Chell/fauxm_item-12.jpg" alt="">
+                <img class="hidden" src="./images/Chell/fauxm_item-8.jpg" alt="">
+                <img class="hidden" src="./images/Chell/fauxm_item-10.jpg" alt="" class="remove">
+                <img class="hidden" src="./images/Chell/fauxm_item-12.jpg" alt="">
             </div>
         </div>
-        <div id="browse-button">Shop Now</div>
+        <a href="products.html">
+            <div id="browse-button">Shop Now</div>
+        </a>
 
         <div class="bottom-divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -119,7 +124,7 @@
             <p class="about-3-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div id="input-container">
                 <input type="email" placeholder="enter your email here">
-                <div id="email-submit">Subscribe</div>
+                <div id="email-submit" onclick="alert('subscribed!')">Subscribe</div>
             </div>
             
         </div>
@@ -159,8 +164,8 @@
         <div id="footer-links" class="footer-items">
             <a href="#"><p>Home</p></a>
             <a href="#about-1"><p class="footer-hidden">About</p></a>
-            <a href=""><p>Products</p></a>
-            <a href=""><p>Cart</p></a>
+            <a href="products.html"><p>Products</p></a>
+            <a href="products.html#shopping-cart"><p>Cart</p></a>
             <a href=""><p class="footer-hidden">Privacy</p></a>
             <a href=""><p class="footer-hidden">Terms of Use</p></a>
         </div>

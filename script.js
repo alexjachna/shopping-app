@@ -3,8 +3,28 @@ var checkoutButton = document.getElementById('sccb-checkout');
 var noItemDisclaimer = document.getElementsByClassName('no-items-disclaimer');
 var browseButtons = document.querySelector('#browse-button');
 
-// Global event listeners
-// browseButtons.addEventListener('click', window.location.href = 'products.html');
+// Hamburger Menu
+hamburger = document.querySelector("#hamburger-menu");
+exitButton = document.querySelector("#exit-button");
+exitDiv = document.querySelector("#exit-out-div");
+
+hamburger.onclick = function() {
+    navBar = document.querySelector("#nav-bar");
+    navBar.classList.toggle("active");
+    exitDiv.classList.toggle("active");
+}
+
+exitButton.onclick = function() {
+    navBar = document.querySelector("#nav-bar");
+    navBar.classList.toggle("active");
+    exitDiv.classList.toggle("active");
+}
+
+exitDiv.onclick = function() {
+    navBar = document.querySelector("#nav-bar");
+    navBar.classList.toggle("active");
+    exitDiv.classList.toggle("active");
+}
 
 function showCart() {
     document.getElementById('shopping-cart').style.display = "flex";

@@ -168,6 +168,8 @@ a #browse-button {
     left: 10%;
     opacity: 0.1;
     z-index: 1;
+    overflow: hidden;
+    display: none;
 }
 
 #blob-2 {
@@ -178,6 +180,8 @@ a #browse-button {
     left: 0;
     opacity: 0.1;
     z-index: 1;
+    overflow: hidden;
+    display: none;
 }
 
 
@@ -551,6 +555,14 @@ footer {
 
     .remove {
         display: none;
+    }
+
+    #masks-container-2 {
+        display: none;
+    }
+    
+    .about-3-title {
+        font-size: 48px;
     }
 }
 

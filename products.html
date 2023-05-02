@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="dividers.css">
 </head>
 <body>
+
+
+    <section id="selected-product-item">
+        <div id="selected-wrapper" onclick="hideSelectedItem()"></div>
+    </section>
     
     <header class="header-products">
         <a href="index.html"><p class="header-title">CC.<span>/ Products</span></p></a>
@@ -36,107 +41,136 @@
         </nav>
     </header>
 
+    <div id="added-to-cart-container">
+        <img src="" class="added-to-cart-image" alt="Purchased item image">
+        <p>Product Successfully Added to Cart</p>
+    </div>
+
     <section id="products-page">
         <div id="products-container">
-            <div class="products-item">
+            <div class="products-item" onclick="showSelectedItem(this)">
                 <img class="product-image" src="./images/Chell/fauxm_item-4.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-4.jpg)">
-                    <div class="product-add-cart" onclick="addToCart(this)">
-                        <p>ADD TO CART</p>
-                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask 1</p>
+                        <p class="product-title">Keaton Mask</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
-                        <p class="product-price">$79</p>
+                        <p class="product-price">$149</p>
+                    </div>
+                    <div class="product-full-description">
+                        <ul>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="products-item">
+            <div class="products-item" onclick="showSelectedItem(this)">
                 <img class="product-image" src="./images/Chell/fauxm_item-6.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-6.jpg)">
-                    <div class="product-add-cart" onclick="addToCart(this)">
-                        <p>ADD TO CART</p>
-                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask 2</p>
+                        <p class="product-title">Majora's Mask</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
-                        <p class="product-price">$79</p>
+                        <p class="product-price">$229</p>
+                    </div>
+                    <div class="product-full-description">
+                        <ul>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="products-item">
+            <div class="products-item" onclick="showSelectedItem(this)">
                 <img class="product-image" src="./images/Chell/fauxm_item-8.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-8.jpg)">
-                    <div class="product-add-cart" onclick="addToCart(this)">
-                        <p>ADD TO CART</p>
-                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask 3</p>
+                        <p class="product-title">Mask of truth</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
-                        <p class="product-price">$79</p>
+                        <p class="product-price">$149</p>
+                    </div>
+                    <div class="product-full-description">
+                        <ul>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="products-item">
+            <div class="products-item" onclick="showSelectedItem(this)">
                 <img class="product-image" src="./images/Chell/fauxm_item-10.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-10.jpg)">
-                    <div class="product-add-cart" onclick="addToCart(this)">
-                        <p>ADD TO CART</p>
-                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask 4</p>
-                        <p class="product-description">Mask</p>
+                        <p class="product-title">The Ghost Key</p>
+                        <p class="product-description">Prop</p>
                     </div>
                     <div class="info-right">
-                        <p class="product-price">$79</p>
+                        <p class="product-price">$59</p>
+                    </div>
+                    <div class="product-full-description">
+                        <ul>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="products-item">
+            <div class="products-item" onclick="showSelectedItem(this)">
                 <img class="product-image" src="./images/Chell/fauxm_item-12.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-12.jpg)">
-                    <div class="product-add-cart" onclick="addToCart(this)">
-                        <p>ADD TO CART</p>
-                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask 5</p>
+                        <p class="product-title">Deku Mask</p>
                         <p class="product-description">Mask</p>
                     </div>
                     <div class="info-right">
                         <p class="product-price">$79</p>
+                    </div>
+                    <div class="product-full-description">
+                        <ul>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="products-item">
+            <div class="products-item" onclick="showSelectedItem(this)">
                 <img class="product-image" src="./images/Chell/fauxm_item-14.jpg" style="display: none">
                 <div class="products-image" style="background: url(./images/Chell/fauxm_item-14.jpg)">
-                    <div class="product-add-cart" onclick="addToCart(this)">
-                        <p>ADD TO CART</p>
-                    </div>
                 </div>
                 <div class="products-info">
                     <div class="info-left">
-                        <p class="product-title">Keaton Mask 6</p>
-                        <p class="product-description">Mask</p>
+                        <p class="product-title">Collar - Kimi Ga Shine</p>
+                        <p class="product-description">Prop</p>
                     </div>
                     <div class="info-right">
-                        <p class="product-price">$79</p>
+                        <p class="product-price">$40</p>
+                    </div>
+                    <div class="product-full-description">
+                        <ul>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                            <li>- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, labore!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -187,6 +221,8 @@
             
         </div>
     </footer>
+
+    
     
     <section id="shopping-cart">
         <div id="click-out-container" onclick="hideCart()"></div>

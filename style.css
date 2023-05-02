@@ -207,6 +207,7 @@ ABOUT US SECTION 1
     position: relative;
 }
 
+
 .about-title {
     font-size: 72px;
     color: white;
@@ -595,7 +596,7 @@ footer {
         height: 0;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         background: #ffffff;
         transition: 0.2s;
         overflow: hidden;
@@ -631,6 +632,11 @@ footer {
 
     .landing-title {
         font-size: 7rem;
+    }
+
+    
+    #about-1 {
+        height: 750px;
     }
 
     #browse-button {
@@ -672,6 +678,10 @@ footer {
 @media only screen and (max-width: 600px) {
     .landing-title {
         font-size: 6rem;
+    }
+
+    .landing-desc {
+        font-size: 2rem;
     }
 
     .about-title {

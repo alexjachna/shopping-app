@@ -26,6 +26,46 @@ exitDiv.onclick = function() {
     exitDiv.classList.toggle("active");
 }
 
+// Selected Item
+var selectedItemDiv = document.querySelector('#selected-product-item');
+
+function showSelectedItem(shopItem) {
+    var title = shopItem.getElementsByClassName('product-title')[0].innerText;
+    var label = shopItem.getElementsByClassName('product-description')[0].innerText;
+    var price = shopItem.getElementsByClassName('product-price')[0].innerText;
+    var desc = shopItem.getElementsByClassName('product-full-description')[0].innerHTML;
+    var imageSrc = shopItem.getElementsByClassName('product-image')[0].src;
+
+    selectedItemDiv.classList.toggle("active");
+
+    var selectedItem = document.createElement('div');
+    selectedItem.classList.add('selected-item');
+    var selectedItemContainer = document.getElementById('selected-product-item');
+    var itemContent = `
+            <div id="selected-product-close" onclick="hideSelectedItem()">x</div>
+            <div id="selected-image-container" style="background-image: url(${imageSrc});">
+                <img class="selected-item-image" src="${imageSrc}" style="display: none">
+            </div>
+            <div id="selected-description-container">
+            <span class="selected-item-title">${title}</span>
+            <span class="selected-item-label">${label}</span>
+            <span class="selected-item-price">${price}</span>
+            ${desc}
+            <div class="add-to-cart" onclick="addToCart(this)">
+                <p>ADD TO CART</p>
+            </div>
+            </div>`
+
+    selectedItem.innerHTML = itemContent;
+    selectedItemContainer.append(selectedItem); 
+}
+
+function hideSelectedItem() {
+    selectedItemDiv.classList.toggle("active");
+    selectedItemDiv.removeChild(selectedItemDiv.lastChild);
+}
+
+// Cart functions
 function showCart() {
     document.getElementById('shopping-cart').style.display = "flex";
 }
@@ -39,7 +79,8 @@ function addToCart(item) {
     var shopItem = item.parentElement.parentElement;
 
     updateCheckoutButton();
-    addItem(shopItem);  
+    addItem(shopItem); 
+    hideSelectedItem();
 }
 
 function updateCounter(ifAdded) { 
@@ -95,9 +136,9 @@ function changeTotal(price, ifAdded) {
 }
 
 function addItem(shopItem) {
-    var title = shopItem.getElementsByClassName('product-title')[0].innerText;
-    var price = shopItem.getElementsByClassName('product-price')[0].innerText;
-    var imageSrc = shopItem.getElementsByClassName('product-image')[0].src;
+    var title = shopItem.getElementsByClassName('selected-item-title')[0].innerText;
+    var price = shopItem.getElementsByClassName('selected-item-price')[0].innerText;
+    var imageSrc = shopItem.getElementsByClassName('selected-item-image')[0].src;
 
     var cartRow = document.createElement('div');
     cartRow.classList.add('cart-item');
@@ -112,6 +153,19 @@ function addItem(shopItem) {
     cartItems.append(cartRow);  
 
     changeTotal(price.slice(1), true);
+    addedToCart(imageSrc);
+}
+
+function addedToCart(image) {
+    var addedItemContainer = document.getElementById('added-to-cart-container');
+    var imageContainer = document.getElementsByClassName('added-to-cart-image')[0];
+    imageContainer.src = image;
+
+    addedItemContainer.style.display = 'flex';
+
+    setTimeout(function() {
+        addedItemContainer.style.display = 'none';
+    }, 5000);
 }
 
 function removeItem(item) {

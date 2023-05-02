@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chell Creates. - Crafting Goods</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-products.css">
+    <link rel="stylesheet" href="styles/dividers.css">
+    <link rel="stylesheet" href="styles/style-contact.css">
+</head>
+<body>
+    <header class="header-products">
+        <a href="index.html"><p class="header-title">CC.<br><span>/Contact</span></p></a>
+        <div id="hamburger-menu">
+            <div id="hamburger-line"></div>
+            <div id="hamburger-line"></div>
+            <div id="hamburger-line"></div>
+        </div>
+        <div id="exit-out-div"></div>
+        <nav id="nav-bar">
+            <div id="exit-button">x</div>
+            <ul>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-container">
+        <div id="contact-text">
+            <p class="contact-title">Contact us</p>
+            <p class="contact-description">Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+        <div id="contact-form" class="hidden">
+            <form action="contactform.php" method="post">
+                <input type="text" name="name" class="input-field" placeholder="name" required>
+                <input type="email" name="email" class="input-field" placeholder="email" required>
+                <input type="text" name="subject" class="input-field" placeholder="subject" required>
+                <textarea type="text" name="message" class="input-field textarea-field" placeholder="message"></textarea required>
+                <div id="contact-button">
+                    <button type="submit" name="submit" class="contact-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div id="footer-socials" class="footer-items">
+            <a href="">
+                <div id="facebook-link" class="footer-social bigger">
+                    <img src="./images/facebook-logo.png">
+                </div>
+            </a>
+            <a href="">
+                <div id="facebook-link" class="footer-social">
+                    <img src="./images/instagram-logo.png">
+                </div>
+            </a>
+            <a href="">
+                <div id="facebook-link" class="footer-social bigger">
+                    <img src="./images/tiktok-logo.png">
+                </div>
+            </a>
+            <a href="">
+                <div id="facebook-link" class="footer-social">
+                    <img src="./images/twitter-logo.png">
+                </div>
+            </a>
+            <a href="">
+                <div id="facebook-link" class="footer-social">
+                    <img src="./images/linkedin-logo.png">
+                </div>
+            </a>
+        </div>
+        <div id="footer-links" class="footer-items">
+            <a href="#"><p>Home</p></a>
+            <a href="products.html"><p>Products</p></a>
+            <a href="products.html#shopping-cart"><p>Cart</p></a>
+        </div>
+        <div id="footer-cc" class="footer-items">
+            <p>© 2023 Chell Creates.</p>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

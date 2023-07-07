@@ -38,14 +38,12 @@
             <p class="contact-description">Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
         </div>
         <div id="contact-form" class="hidden">
-            <form>
+            <form id="c-form" name="contact-form">
                 <input type="text" name="name" class="input-field" placeholder="name" required>
                 <input type="email" name="email" class="input-field" placeholder="email" required>
                 <input type="text" name="subject" class="input-field" placeholder="subject" required>
-                <textarea type="text" name="message" class="input-field textarea-field" placeholder="message"></textarea required>
-                <div id="contact-button">
-                    <button name="submit" class="contact-btn">Submit</button>
-                </div>
+                <textarea type="text" name="message" class="input-field textarea-field" placeholder="message" required></textarea>
+                <button type="submit" class="contact-btn">Submit</button>
             </form>
         </div>
     </section>
@@ -84,10 +82,13 @@
             <a href="products.html#shopping-cart"><p>Cart</p></a>
         </div>
         <div id="footer-cc" class="footer-items">
-            <p>© 2023 Chell Creates.</p>
-            
+            <p>© 2023 Chell Creates.</p>  
         </div>
     </footer>
+
+    <div id="contact-confirm">
+        <p>Thank you for contacting us!</p>
+    </div>
 
     <script src="script.js"></script>
 </body>

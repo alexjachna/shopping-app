@@ -2,6 +2,7 @@
 var checkoutButton = document.getElementById('sccb-checkout');
 var noItemDisclaimer = document.getElementsByClassName('no-items-disclaimer');
 var browseButtons = document.querySelector('#browse-button');
+var cForm = document.getElementById('c-form');
 
 // Hamburger Menu
 hamburger = document.querySelector("#hamburger-menu");
@@ -190,6 +191,27 @@ function removeItem(item) {
     else {
         return;
     }
+}
+
+cForm.addEventListener('submit', function (e) {
+    e.preventDefault()
+
+    cForm.reset()
+    document.getElementById('contact-confirm').style.display = 'flex';
+
+    setTimeout(function() {
+        document.getElementById('contact-confirm').style.display = 'none';
+    }, 5000);
+})
+
+function subscribeSubmit() {
+    document.getElementById('contact-confirm').style.display = 'flex';
+
+    document.getElementsByClassName('subscribe-input')[0].value = "";
+
+    setTimeout(function() {
+        document.getElementById('contact-confirm').style.display = 'none';
+    }, 5000);
 }
 
 // Animation
